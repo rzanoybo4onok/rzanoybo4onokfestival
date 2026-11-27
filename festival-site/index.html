@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Fest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">DIGITAL FEST</div>
+            <nav aria-label="Основная навигация">
+                <ul class="nav-list">
+                    <li><a href="#program">Программа</a></li>
+                    <li><a href="#speakers">Спикеры</a></li>
+                    <li><a href="#register">Регистрация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <h1>Фестиваль цифровых технологий</h1>
+                    <p>Создаём будущее вместе! Присоединяйтесь к главному IT-событию года.</p>
+                    <a href="#register" class="btn">Участвовать</a>
+                </div>
+                <div class="hero-decor" aria-hidden="true">
+                    <span>2026</span>
+                    <p>Дизайн • Код • ИИ</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="program" class="section">
+            <div class="container">
+                <h2 class="section-title">Программа</h2>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>Веб-дизайн</h3>
+                        <p>Макеты, прототипирование и современный UX.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Разработка</h3>
+                        <p>Семантический HTML, CSS-переменные и Flexbox.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Медиа</h3>
+                        <p>Творческие проекты и цифровой продакшн.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Искусственный интеллект</h3>
+                        <p>Нейросети в вебе и автоматизация задач.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Кибербезопасность</h3>
+                        <p>Защита данных и безопасность приложений.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Маркетинг</h3>
+                        <p>Продвижение IT-продуктов и аналитика.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="speakers" class="section">
+            <div class="container">
+                <h2 class="section-title">Спикеры</h2>
+                <div class="cards-grid">
+                    <article class="card speaker-card">
+                        <h3>Иван Иванов</h3>
+                        <p class="role">Эксперт по Frontend</p>
+                    </article>
+                    <article class="card speaker-card">
+                        <h3>Мария Иванова</h3>
+                        <p class="role">UX/UI Дизайнер</p>
+                    </article>
+                    <article class="card speaker-card">
+                        <h3>Леха</h3>
+                        <p class="role">Data Scientist</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="register" class="section">
+            <div class="container">
+                <h2 class="section-title">Регистрация</h2>
+                <form action="#" method="POST" class="reg-form">
+                    <div class="form-group">
+                        <label for="user-name">Ваше имя</label>
+                        <input type="text" id="user-name" name="name" placeholder="Иван" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-email">Email</label>
+                        <input type="email" id="user-email" name="email" placeholder="ivan@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="direction">Направление</label>
+                        <select id="direction" name="direction" required>
+                            <option value="">-- Выберите направление --</option>
+                            <option value="web">Веб-дизайн</option>
+                            <option value="dev">Разработка</option>
+                            <option value="media">Медиа</option>
+                            <option value="mkt">Маркетинг</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        <label for="agreement">Я согласен на обработку тестовых данных</label>
+                    </div>
+
+                    <button type="submit" class="btn">Отправить заявку</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Digital Fest.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
